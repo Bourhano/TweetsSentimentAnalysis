@@ -18,7 +18,6 @@ consumer = KafkaConsumer(
 for message in consumer:
     # tweets = json.loads(json.dumps(message.value))
     tweets = message.value
-    # print(tweets.keys())
-    print(tweets['coordinates'], tweets['place'])
-    # time.sleep(2)
-
+    print(tweets['user']['location'], tweets[''])
+    # print(tweets['coordinates'], tweets['place'])
+    time.sleep(1)

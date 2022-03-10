@@ -21,4 +21,3 @@ for message in consumer:
     # print(tweets.keys())
     print(tweets['text'], tweets['coordinates'], tweets['place'])
     time.sleep(1)
-
