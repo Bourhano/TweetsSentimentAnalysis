@@ -5,7 +5,7 @@ from nltk.downloader import download
 
 print("Getting required packages...")
 download('vader_lexicon')
-print("Packages ready.")
+print("Packages ready.\n")
 
 in_topic_name = "text_hashtag_ingest"
 
@@ -24,7 +24,7 @@ producer_hashtag = KafkaProducer(bootstrap_servers='localhost:9092',
 
 sid = SentimentIntensityAnalyzer()
 
-print("Starting tweets reading...")
+print("Starting tweets analysis...")
 for message in consumer:
     tweet_dict = message.value
     tweet_text = tweet_dict['text']

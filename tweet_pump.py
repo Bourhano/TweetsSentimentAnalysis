@@ -23,8 +23,9 @@ class StdOutListener(StreamListener):
         print(status)
 
 
+keys_path = "keys_private.txt"
 out_topic_name = "tweet_ingest"
-consumer_key, consumer_secret, access_token, access_token_secret = read_keys()
+consumer_key, consumer_secret, access_token, access_token_secret = read_keys(keys_path)
 
 print(f"Sending tweets to topic {out_topic_name}")
 

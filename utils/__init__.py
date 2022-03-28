@@ -1,6 +1,6 @@
-def read_keys():
+def read_keys(path="keys.txt"):
     keys = []
-    with open("keys.txt") as fp:
+    with open(path) as fp:
         for _ in range(4):
             keys.append(fp.readline().strip())
     return keys

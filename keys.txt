@@ -1,0 +1,4 @@
+### INSERT HERE Twitter consumer_key        ###
+### INSERT HERE Twitter consumer_secret     ###
+### INSERT HERE Twitter access_token        ###
+### INSERT HERE Twitter access_token_secret ###
