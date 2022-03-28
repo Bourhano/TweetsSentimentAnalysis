@@ -37,5 +37,4 @@ for message in consumer:
         print(dict(sorted(hashtags_dict.iteritems(), key=hashtags_dict.get, reverse=True)[:5]))
         print(f"\nAn example tweet: {tweet_text}")
 
-
     # time.sleep(0.2)
