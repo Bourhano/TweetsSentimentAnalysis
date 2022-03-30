@@ -24,6 +24,9 @@ producer_hashtag = KafkaProducer(bootstrap_servers='localhost:9092',
 
 sid = SentimentIntensityAnalyzer()
 
+print(f"Receiving tweets from topic {in_topic_name}")
+print(f"Sending tweets to topic {out_topic_name_all} and {out_topic_name_hashtag}")
+
 print("Starting tweets analysis...")
 for message in consumer:
     tweet_dict = message.value

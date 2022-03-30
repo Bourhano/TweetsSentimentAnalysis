@@ -28,10 +28,11 @@ for message in consumer:
     if len(moving_sentiments) > window:
         moving_sentiments = moving_sentiments[1:]
 
-        if monitor_drift and np.abs(np.mean(moving_sentiments) - tweet_sentiment):
+        if monitor_drift and \
+                np.abs(np.mean(moving_sentiments) - tweet_sentiment) > drift_threshold:
             # in this concept, the drift is considered if the sentiments shifted
             # by a value of 0.4 from the mean sentiment analyzed.
-            print("Drift detected. Resetting our study window.")
+            print("\n\nDrift detected. Resetting our study window.\n")
 
             # in this case, we should reset our sliding window.
             moving_sentiments = []

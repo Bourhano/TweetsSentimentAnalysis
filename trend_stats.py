@@ -3,7 +3,7 @@ import time
 
 from kafka import KafkaConsumer
 
-CYCLES = 20
+CYCLES = 50
 in_topic_name = "all_sentiment_ingest"
 
 consumer = KafkaConsumer(in_topic_name, bootstrap_servers="localhost:9092",
