@@ -2,6 +2,14 @@
 
 A group project implemented with Twitter API, Apache Kafka and Python to ingest tweets and analyse them in order to predict the sentiment of the tweeter.
 
+
+**Important**: the file ``keys.txt`` should contain the Twitter API keys in the same order specified in the said file. Note that you should also rename the corresponding variable in the first script of step  5. (read below)
+
+**Requirements**:
+- working kafka installation
+- nltk library
+- tweepy library
+
 To run the code **on Windows**:
 
 1. Go to [kafka-path]\kafka_2.12-3.1.0\bin\windows
