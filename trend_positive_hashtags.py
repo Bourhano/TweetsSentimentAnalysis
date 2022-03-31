@@ -1,5 +1,5 @@
 import json
-import time
+# import time
 
 from kafka import KafkaConsumer
 

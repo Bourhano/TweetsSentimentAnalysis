@@ -20,4 +20,13 @@ To run the code **on Windows**:
 
     $ .\kafka-server-start.bat ..\..\config\server.properties
 
-5. Launch your Python script.
+5. Launch the scripts in the following order:
+   - tweet_pump.py
+   - text_hashtag_pump.py
+   - sentiment_analyzer.py
+   - sentiment_separator.py
+   - trend_stats.py
+   - trend_negative_hashtags.py
+   - trend_positive_hashtags.py
+
+The best practice is to have a separate shell for every script, since it is an online application.

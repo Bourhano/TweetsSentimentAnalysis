@@ -1,2 +1,10 @@
-.idea
+# IDE files
+.idea/
+
+# private keys, HaHa
 keys_private.txt
+
+# unused
+main.py
+sentiment/
+tests/
