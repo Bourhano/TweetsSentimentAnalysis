@@ -28,5 +28,6 @@ To run the code **on Windows**:
    - trend_stats.py
    - trend_negative_hashtags.py
    - trend_positive_hashtags.py
+   - trend_sentiments.py
 
 The best practice is to have a separate shell for every script, since it is an online application.
